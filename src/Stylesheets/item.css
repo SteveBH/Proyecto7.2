@@ -1,0 +1,84 @@
+.contenedor-testimonio {
+  width: 308px;
+  margin: 20px 10px; /* Reducimos el margen horizontal */
+  display: flex;
+  flex-direction: column; /* Cambiamos la dirección de flexión a columna */
+  align-items: center;
+  justify-content: center;
+  background-color: #eee; /* Cambio de color oscuro (#222) a un color más claro (#eee) */
+  box-shadow: 0 3px 13px 1px rgba(0, 0, 0, 0.09);
+  border-radius: 10px;
+  transition: transform 0.5s, box-shadow 0.5s;
+  color: #000; /* Cambiar letras a negro en lugar de azul */
+}
+
+.contenedor-testimonio:hover {
+  background-color: #eee; /* Cambio de color oscuro (#222) a un color más claro (#eee) al hacer hover */
+  box-shadow: 0 5px 15px rgba(3, 89, 92, 0.5);
+  transform: translateY(-15px);
+}
+
+.imagen-testimonio {
+  height: 200px; /* Altura deseada para la imagen */
+  width: auto; /* Para mantener la proporción de la imagen */
+  border-radius: 4px;
+}
+
+article {
+  margin: 0 30px;
+  display: flex;
+  align-items: center;
+  position: relative;
+  transition: all 0.3s ease;
+  overflow: hidden; /* Para recortar cualquier parte que sobresalga */
+  border-radius: 4px;
+}
+
+article img:first-child {
+  box-shadow: 0 60px 60px -60px rgba(0, 30, 255, 0.5);
+}
+
+article img:last-child {
+  position: absolute;
+  width: 60px;
+  bottom: 8%;
+  left: 50%;
+  transform: translateX(-50%);
+  transition: 0.3s ease;
+  opacity: 0.7;
+}
+
+/* Eliminar las líneas azules debajo de los enlaces y botones */
+article a,
+article button {
+  text-decoration: none;
+}
+
+article:hover {
+  transform: perspective(250px) rotateX(15deg) translateY(-10%) translateZ(0);
+}
+
+article::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  height: 100%;
+  width: 100%;
+  background-image: linear-gradient(
+    to bottom,
+    transparent 10%,
+    rgba(0, 0, 0, 0.5) 50%,
+    rgba(0, 0, 0) 95%
+  );
+  opacity: 0;
+  transition: all 0.3s ease;
+}
+
+article:hover::before {
+  opacity: 0.5;
+}
+
+article:hover img:last-child {
+  opacity: 1;
+  transform: translateY(0);
+}

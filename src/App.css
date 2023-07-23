@@ -1,0 +1,61 @@
+/* App.css */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /* Agregamos box-sizing para mejorar el manejo del tamaño de los elementos */
+}
+
+body {
+  font-family: 'fleshandblood', sans-serif;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background-image: url('./images/Fondobloodborne.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+/* Contenedor principal */
+.contenedor-principal {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px; /* Espacio entre los componentes Item */
+  max-width: 1200px; /* Ancho máximo para evitar que se extienda demasiado */
+  margin: 0 auto; /* Centrar el contenedor en la página */
+  padding: 20px; /* Espacio de relleno alrededor del contenido */
+  border-radius: 10px; /* Bordes redondeados para suavizar los bordes */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Sombra para dar profundidad */
+}
+
+/* Contenedor grid */
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px; /* Espacio entre los componentes */
+  max-width: 1200px; /* Ancho máximo para evitar que se extienda demasiado */
+  margin: 0 auto; /* Centrar el contenedor en la página */
+}
+
+/* Contenedor para imágenes grandes */
+.imagen-L {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px; /* Espacio entre las imágenes */
+  max-width: 1200px; /* Ancho máximo para evitar que se extienda demasiado */
+  margin: 0 auto; /* Centrar el contenedor en la página */
+}
+
+/* Estilos para las imágenes de los componentes */
+.imagen-item {
+  width: 100%;
+  max-width: 300px; /* Ancho máximo para cada imagen */
+  height: auto;
+}
+
+.imagen-item img {
+  width: 100%;
+  height: auto;
+}

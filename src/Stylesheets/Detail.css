@@ -1,0 +1,230 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: fleshandblood;
+}
+
+body {
+  font-family: 'fleshandblood', sans-serif;
+  min-height: 100vh;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background-image: url('../images/Fondobloodborne.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+/* Estilos para el contenedor principal */
+.contenedor-title {
+  color: black;
+  min-height: 700px;
+  /* position: relative;
+  display: flex; */
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  background-image: url(../images/manga.png);
+  max-width: 1200px; /* Ancho máximo para evitar que se extienda demasiado */
+  margin: 0 auto; /* Centrar el contenedor en la página */
+  padding: 20px; /* Espacio de relleno alrededor del contenido */
+  border-radius: 10px; /* Bordes redondeados para suavizar los bordes */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Sombra para dar profundidad */
+}
+
+.contenedor-title h1 {
+  font-size: 32px;
+  margin-bottom: 20px;
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.contenedor-title h1:hover {
+  box-shadow: 0 5px 15px rgba(235, 6, 6, 0.5);
+  /* transform: translateY(-5px); */
+}
+
+/* Estilos para el contenedor de características */
+.contenedor-caracteristicas {
+  min-height: 600px;
+  width: 100%;
+  height: auto;
+  box-shadow: 0 3px 13px 1px rgba(0, 0, 0, 0.9);
+  transition: 0.5s;
+  margin: 50px 30px;
+  color: black;
+  overflow: auto;
+  display:contents;
+  align-items: center; /* Centrar verticalmente el contenido */
+  background-color: rgba(0, 0, 0, 0.8); /* Fondo más claro */
+}
+
+.contenedor-caracteristicas:hover {
+  box-shadow: 0 5px 15px rgba(0, 6, 6, 0.5);
+  transform: translateY(-5px);
+}
+
+/* Estilos para las imágenes dentro del contenedor */
+.imagen {
+  width: none;
+  height: 368px;
+  margin: 10px 10px 50px;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(255, 255, 255, 0.8); /* Fondo más claro */
+  box-shadow: 0 3px 13px 1px rgba(0, 0, 0, 0.09);
+  transition: 0.5s;
+  margin: 40px 30px;
+}
+
+.imagen:hover {
+  box-shadow: 0 5px 15px rgba(226, 186, 6, 0.5);
+  transform: translateY(-25px);
+}
+
+/* Estilos para los textos dentro del contenedor de características */
+.contenedor-texto {
+  line-height: 1.5;
+  color: white;
+  width: 100%;
+  font-size: 18px;
+  text-align: center;
+  padding: 40px;
+  font-family: 'lato', sans-serif;
+  font-weight: 400;
+}
+
+/* .caracteristicas {
+  font-size: 1.1rem;
+  text-align: justify;
+  font-size: 1.3rem;
+  margin-top: 15px;
+  padding-bottom: 30px;
+} */
+
+/* Estilos para la barra de navegación */
+nav {
+  background-image: url(../images/full-moon-bloodborne.gif);
+}
+
+/* Estilos para el pie de página */
+footer {
+  background-image: url(../images/gif.gif);
+}
+
+.imagen-footer {
+  width: 10%;
+  height: 10%;
+  margin-top: -2.5%;
+}
+
+
+.encabezado-gif {
+  max-height: 300px; 
+  overflow: hidden;
+  border-radius: 10px; 
+}
+
+.encabezado-gif img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+/* Estilos para el contenedor del detalle */
+.detail-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  background-color: rgba(0, 0, 0, 0.8); 
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.8); 
+}
+
+/* Estilos para el botón del menú */
+.buttonMenu {
+  background-color: #b39030;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.buttonMenu:hover {
+  background-color: #947626;
+}
+
+/* Estilos para las características */
+.caracteristicas {
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.caracteristicas strong {
+  font-weight: bold;
+}
+
+/* Estilos para la sección del creador y contacto */
+.box {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.creador {
+  font-size: 20px;
+  margin-bottom: 10px;
+  color: #f0f0f0; /* Color del texto más oscuro */
+}
+
+.apoyo {
+  font-size: 20px;
+  margin-bottom: 10px;
+  color: black; /* Color del texto más oscuro */
+}
+
+.siguenos {
+  font-size: 18px;
+  margin-bottom: 10px;
+  color: #f0f0f0;
+}
+
+.canal {
+  background-color: #b39030;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.canal:hover {
+  background-color: #947626;
+}
+
+.contacto {
+  background-color: #b39030;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.contacto:hover {
+  background-color: #947626;
+}
+
+/* Estilos responsive para las imágenes en dispositivos móviles */
+@media screen and (max-width: 740px) {
+  .imagen {
+    width: 70%;
+  }
+  .caracteristicas {
+    width: 100%;
+  }
+}
